@@ -1,22 +1,30 @@
 {
-  "name": "academy-of-articles",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "20.6.2",
-    "@types/react": "18.2.22",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.4.19",
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.2.2"
-  }
+	"name": "academy-of-articles",
+	"author": {
+		"email": "game.gt.tutor@gmail.com",
+		"name": "Danil Chernenko"
+	},
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@types/node": "20.6.2",
+		"@types/react": "18.2.22",
+		"@types/react-dom": "18.2.7",
+		"eslint": "8.49.0",
+		"eslint-config-next": "13.4.19",
+		"next": "13.4.19",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "5.2.2"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.2.0",
+		"prettier": "^3.0.3"
+	}
 }
