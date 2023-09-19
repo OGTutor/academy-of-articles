@@ -35,6 +35,7 @@
 			"@/libs/*": ["libs/*"],
 			"@/actions/*": ["actions/*"],
 			"@/providers/*": ["providers/*"],
+			"@/styles/*": ["styles/*"],
 			"@/types/*": ["types/*"]
 		}
 	},
