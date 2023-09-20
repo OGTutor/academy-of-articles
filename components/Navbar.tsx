@@ -1,6 +1,7 @@
 'use client';
 
-import { useTheme } from '@/hooks/theme/useTheme';
+import { useTheme } from '@/app/providers/ThemeProvider';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -12,7 +13,7 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
 	const { toggleTheme, theme } = useTheme();
 
 	return (
-		<div className={`app ${theme}`}>
+		<div className={classNames('app', {}, [theme])}>
 			<nav>
 				<Link href="/">Home</Link>
 				<Link href="/about">About</Link>

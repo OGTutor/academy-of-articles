@@ -5,7 +5,7 @@ import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from './ThemeContext';
 
 interface UseThemeResult {
 	toggleTheme: () => void;
-	theme?: Theme;
+	theme: Theme;
 }
 
 export function useTheme(): UseThemeResult {

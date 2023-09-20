@@ -1,8 +1,9 @@
 import Navbar from '@/components/Navbar';
-import ThemeProvider from '@/hooks/theme/ThemeProvider';
-import '@/styles/index.scss';
+
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { ThemeProvider } from './providers/ThemeProvider';
+import './styles/index.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 

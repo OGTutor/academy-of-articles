@@ -21,10 +21,8 @@
 		],
 		"baseUrl": "./",
 		"paths": {
+			"@/app/*": ["app/*"],
 			"@/components/*": ["components/*"],
-			"@/ui/*": ["components/ui/*"],
-			"@/screens/*": ["components/screens/*"],
-
 			"@/hooks/*": ["hooks/*"],
 			"@/shared/*": ["shared/*"],
 			"@/config/*": ["config/*"],
@@ -36,6 +34,7 @@
 			"@/actions/*": ["actions/*"],
 			"@/providers/*": ["providers/*"],
 			"@/styles/*": ["styles/*"],
+			"@/helpers/*": ["helpers/*"],
 			"@/types/*": ["types/*"]
 		}
 	},
