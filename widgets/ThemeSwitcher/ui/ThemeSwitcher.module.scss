@@ -1,0 +1,68 @@
+.RowMode {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.ColumnMode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.ToggleSwitch {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	min-width: 60px;
+	cursor: pointer;
+}
+
+.icon {
+	position: relative;
+	display: block;
+	font-size: 1.5em;
+	text-align: center;
+	transition: 0.5s;
+	align-items: center;
+	justify-content: center;
+	color: var(--theme-switcher-button-icon-color);
+}
+
+.text {
+	position: relative;
+	display: block;
+	font-size: 1.5em;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: var(--theme-switcher-button-text-color);
+}
+
+.ToggleSwitch .switch {
+	position: relative;
+	height: 22px;
+	width: 44px;
+	border-radius: 25px;
+	background: var(--theme-switcher-button-background-color);
+}
+
+.switch::before {
+	content: '';
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	background: var(--theme-switcher-button-color);
+	transition: all 0.3s ease;
+}
+
+.SwitchDark .switch::before {
+	left: 25px;
+}
