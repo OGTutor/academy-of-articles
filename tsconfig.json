@@ -23,6 +23,7 @@
 		"paths": {
 			"@/app/*": ["app/*"],
 			"@/components/*": ["components/*"],
+			"@/widgets/*": ["widgets/*"],
 			"@/hooks/*": ["hooks/*"],
 			"@/shared/*": ["shared/*"],
 			"@/config/*": ["config/*"],
