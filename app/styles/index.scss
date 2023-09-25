@@ -3,6 +3,13 @@
 @import 'themes/light';
 @import 'themes/dark';
 
+@font-face {
+	src: url('/fonts/Cyberpunk.ttf') format('ttf');
+	font-family: 'Cyberpunk';
+	font-weight: 700;
+	font-style: italic;
+}
+
 .app {
 	font: var(--font-m);
 
