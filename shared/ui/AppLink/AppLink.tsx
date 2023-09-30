@@ -1,6 +1,6 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
-import Link, { LinkProps } from 'next/link';
-import { FC } from 'react';
+import Link, { type LinkProps } from 'next/link';
+import { type FC } from 'react';
 import styles from './AppLink.module.scss';
 
 export enum AppLinkTheme {

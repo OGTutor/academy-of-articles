@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useMemo, useState } from 'react';
+import { useMemo, useState, type FC } from 'react';
 import {
 	LOCAL_STORAGE_THEME_KEY,
 	Theme,
@@ -8,23 +8,19 @@ import {
 } from '../lib/ThemeContext';
 
 interface ThemeProviderProps {
-	children: React.ReactElement;
+	children: React.ReactNode;
 }
 
-const defaultTheme =
-	(localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
-
 const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-	const [theme, setTheme] = useState<Theme>(defaultTheme);
+	const storedTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY);
+	const defaultTheme = (storedTheme as Theme) ?? Theme.LIGHT;
 
-	const toggleChangeTheme = () => {
-		setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
-	};
+	const [theme, setTheme] = useState<Theme>(defaultTheme);
 
 	const defaultProps = useMemo(
 		() => ({
-			theme: theme,
-			setTheme: setTheme,
+			theme,
+			setTheme,
 		}),
 		[theme]
 	);

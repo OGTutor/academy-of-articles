@@ -11,9 +11,9 @@ interface UseThemeResult {
 export function useTheme(): UseThemeResult {
 	const { setTheme, theme } = useContext(ThemeContext);
 
-	const toggleTheme = () => {
+	const toggleTheme = (): void => {
 		const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
-		setTheme!(newTheme);
+		setTheme(newTheme);
 		localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
 	};
 

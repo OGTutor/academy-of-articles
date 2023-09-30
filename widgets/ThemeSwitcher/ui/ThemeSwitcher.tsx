@@ -2,7 +2,7 @@ import { Theme, useTheme } from '@/app/providers/ThemeProvider';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import Button, { ThemeButton } from '@/shared/ui/Button/Button';
 import Image from 'next/image';
-import { FC } from 'react';
+import { type FC } from 'react';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import styles from './ThemeSwitcher.module.scss';
 
