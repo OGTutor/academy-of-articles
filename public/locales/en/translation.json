@@ -6,5 +6,7 @@
 	"About link": "About",
 	"Articles link": "Articles",
 	"Settings link": "Settings",
-	"Back link": "Back"
+	"Back": "Back",
+	"Not found title": "Not Found",
+	"Not found text": "Could not find requested resource"
 }

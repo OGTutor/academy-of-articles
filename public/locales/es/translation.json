@@ -6,5 +6,7 @@
 	"About link": "Acerca de",
 	"Articles link": "Artículos",
 	"Settings link": "Ajustes",
-	"Back link": "Atrás"
+	"Back": "Atrás",
+	"Not found title": "No encontrado",
+	"Not found text": "No se pudo encontrar el recurso solicitado"
 }
