@@ -8,5 +8,9 @@
 	"Settings link": "Settings",
 	"Back": "Back",
 	"Not found title": "Not Found",
-	"Not found text": "Could not find requested resource"
+	"Not found text": "Could not find requested resource",
+	"Home header": "Home page",
+	"About header": "About page",
+	"Error page header": "Something went wrong!",
+	"Error page button": "Try again"
 }
