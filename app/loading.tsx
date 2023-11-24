@@ -1,3 +1,5 @@
+import PageLoader from '@/widgets/PageLoader/PageLoader';
+
 export default function Loading(): React.ReactNode {
-	return <div>Loading...</div>;
+	return <PageLoader />;
 }
